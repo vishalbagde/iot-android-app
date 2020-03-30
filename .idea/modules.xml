@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Water Monitoring IOT.iml" filepath="$PROJECT_DIR$/Water Monitoring IOT.iml" group="Water Monitoring IOT" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Water Monitoring IOT/app" />
+    </modules>
+  </component>
+</project>
