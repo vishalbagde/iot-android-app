@@ -12,18 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
+        <activity android:name=".MainModeSwitchActivity"></activity>
         <activity android:name=".MainDashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity android:name=".MainHomeActivity" />
         <activity android:name=".MainTdsGraphActivity" />
-        <activity android:name=".MainLoginActivity">
-
-        </activity>
+        <activity android:name=".MainLoginActivity"></activity>
         <activity android:name=".MainActivity" />
     </application>
 

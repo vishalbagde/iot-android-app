@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    tools:context=".MainModeSwitchActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+    <ImageView
+        android:id="@+id/imgRo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/water_purifier_logo"
+        android:layout_marginRight="50dp"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/swMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOn="RO"
+        android:textOff="WP"
+        app:showText="true"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imgWp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/water_purifier_logo"
+        />
+    </LinearLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearMode"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="58dp"
+            android:text="RO"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="9dp"
+            android:text="PURIFIER"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
