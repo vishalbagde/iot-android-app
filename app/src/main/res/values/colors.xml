@@ -15,4 +15,5 @@
     <color name="pink">#fe104d</color>
     <color name="black_overlay">#66000000</color>
     <color name="chatSettingsBackground">#bbdefb</color>
+    <color name="chartTextColor">#3349FF</color>
 </resources>
