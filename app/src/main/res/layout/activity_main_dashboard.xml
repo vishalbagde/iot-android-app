@@ -20,7 +20,7 @@
             android:layout_marginRight="20dp">
 
             <TextView
-                android:id="@+id/txtdashboard"
+                android:id="@+id/txtdashboardTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="My Dashboard"
@@ -29,9 +29,10 @@
 
 
             <TextView
+                android:id="@+id/txtDashboardUserId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/txtdashboard"
+                android:layout_below="@+id/txtdashboardTitle"
                 android:layout_marginTop="6dp"
                 android:text="12 Item"
                 android:textColor="@color/textwhite"
@@ -62,6 +63,7 @@
                 android:background="@color/darkblue"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="6dp"
+                android:onClick="onClickDashboardHome"
                 >
 
                 <LinearLayout
@@ -94,7 +96,9 @@
                 android:layout_margin="12dp"
                 android:background="@color/darkblue"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:onClick="onClickDashboardOperation"
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -193,7 +197,9 @@
                 android:layout_margin="12dp"
                 android:background="@color/darkblue"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="6dp">
+                app:cardElevation="6dp"
+                android:onClick="onClickDashboardSetting"
+                >
 
                 <LinearLayout
                     android:layout_width="match_parent"

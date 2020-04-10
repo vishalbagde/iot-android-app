@@ -44,7 +44,7 @@ public class MainLoginActivity extends AppCompatActivity {
 
         btnLogin=findViewById(R.id.btnLogin);
 
-        sharedPreferences=getSharedPreferences("loginDetails",MODE_PRIVATE);
+        sharedPreferences=getSharedPreferences(Common.LOGIN_KEY,MODE_PRIVATE);
 
         int user_id = sharedPreferences.getInt("user_id",0);
         if(user_id>0)
@@ -60,7 +60,7 @@ public class MainLoginActivity extends AppCompatActivity {
         String password = edPassoword.getText().toString();
 
         if (username != null && password != null) {
-            String url = Url.url + "/seminar/index.php?op=login&username=" + username + "+&password=" + password;
+            String url = Url.url + "?op=login&username=" + username + "+&password=" + password;
             StringRequest sr = new StringRequest(StringRequest.Method.GET, url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
@@ -73,7 +73,7 @@ public class MainLoginActivity extends AppCompatActivity {
                             editor.putString("name",obj.getString("name"));
                             editor.commit();
 
-                            Intent intent = new Intent(MainLoginActivity.this,MainTdsGraphActivity.class);
+                            Intent intent = new Intent(MainLoginActivity.this,MainDashboardActivity.class);
                             startActivity(intent);
 
                         } else {

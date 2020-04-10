@@ -70,6 +70,8 @@
             android:textSize="30dp"
             android:text="GO"
             android:onClick="onClickLogin"
+
+
         />
 
     </LinearLayout>

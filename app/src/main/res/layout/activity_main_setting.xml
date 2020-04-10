@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSettingActivity"
+    android:orientation="vertical"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="1"
+            >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="User Id : "
+            android:textSize="30dp"/>
+
+         <EditText
+             android:id="@+id/edSettingUserId"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:enabled="false"
+             android:text="01"
+             android:textSize="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="1"
+            >
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="User Name : "
+                android:textSize="30dp"/>
+
+            <EditText
+                android:id="@+id/edSettingUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Filter Type : "
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/edSettingFilterType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RO"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="AUTO MODE : "
+            android:textSize="30dp"/>
+
+        <Switch
+            android:id="@+id/svSettingAutoMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/thumb_track"
+            android:textOff="Off"
+            android:textOn="On"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="TDS AUTO MODE: "
+            android:textSize="26dp"/>
+
+        <EditText
+            android:id="@+id/edSettingAutoTds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="250"
+            android:inputType="number"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        >
+
+        <Button
+            android:id="@+id/btnSettingUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Update"
+            android:textColor="@color/textwhite"
+            android:background="@drawable/gradient"
+            android:onClick="onClickSettingUpdate"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

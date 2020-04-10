@@ -14,36 +14,155 @@
         android:layout_height="wrap_content"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        android:layout_margin="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp"
         android:layout_gravity="center"
         >
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="10dp">
 
-            <ImageView
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerInParent="true"
+                android:indeterminate="false"
+                android:max="10000"
+                android:progress="0"
+                android:progressDrawable="@drawable/custom_progressbar_drawable"
+                android:secondaryProgress="0" />
+
+            <!--        <com.ramijemli.percentagechartview.PercentageChartView
+                android:id="@+id/view_id"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/logo_tds_meter" />
+                app:pcv_mode="ring"
+                app:pcv_orientation="clockwise"
+                app:pcv_animDuration="800"
+                app:pcv_drawBackground="true"
+                app:pcv_drawBackgroundBar="true"
+                app:pcv_textColor="@color/textwhite"
+                app:pcv_textSize="30dp"
+                app:pcv_backgroundBarColor="@color/deeppurple"
+                app:pcv_animInterpolator="anticipate_overshoot"
+                app:pcv_progress="0"
+                app:pcv_startAngle="90"/>
+-->
+            <!--<ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/logo_tds_meter" />-->
 
             <TextView
+                android:id="@+id/txtTdsValue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="100 PPM"
+                android:layout_alignBottom="@+id/progressBar"
+                android:layout_centerInParent="true"
                 android:textColor="@color/chartTextColor"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/txtHomeTds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 PPM"
+                android:textColor="@color/chartTextColor"
+                android:layout_below="@+id/progressBar"
+                android:layout_centerHorizontal="true"
                 android:textSize="30sp"
                 style="@style/TextTdsStyle" />
-        </LinearLayout>
+        </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-    
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="2"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        android:background="@drawable/gradient"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient">
+        </LinearLayout>
 
+        <TextView
+            android:id="@+id/txtTitleFilterType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="FILTER TYPE:"
+            android:textSize="25dp"
+            style="@style/TextHomeStyle"
+
+        />
+
+        <TextView
+            android:id="@+id/txtHomeFilterType"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="PURIFIER"
+            android:layout_gravity="right"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            style="@style/TextHomeStyle"
+            android:textColor="@color/colorAccent"
+            ></TextView>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="2"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtTitleFilterMode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="FILTER MODE:"
+            android:textSize="25dp"
+            style="@style/TextHomeStyle"
+            />
+
+        <TextView
+            android:id="@+id/txtHomeFilterMode"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="MANUAL"
+            android:layout_gravity="right"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            style="@style/TextHomeStyle"
+            android:textColor="@color/colorAccent"
+            ></TextView>
+
+    </androidx.cardview.widget.CardView>
 
 
 
