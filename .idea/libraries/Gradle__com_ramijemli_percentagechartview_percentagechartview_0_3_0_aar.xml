@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.ramijemli.percentagechartview:percentagechartview:0.3.0@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3f0f16cb4b3b02b5df7c428c64e1501/jetified-percentagechartview-0.3.0/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2bfd1c2b72feb58ef1f2526b158c86d/jetified-percentagechartview-0.3.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3f0f16cb4b3b02b5df7c428c64e1501/jetified-percentagechartview-0.3.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f3f0f16cb4b3b02b5df7c428c64e1501/jetified-percentagechartview-0.3.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2bfd1c2b72feb58ef1f2526b158c86d/jetified-percentagechartview-0.3.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c2bfd1c2b72feb58ef1f2526b158c86d/jetified-percentagechartview-0.3.0/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ramijemli.percentagechartview/percentagechartview/0.3.0/100e982b7609937da105d001013f9b4ffa5136a7/percentagechartview-0.3.0-javadoc.jar!/" />

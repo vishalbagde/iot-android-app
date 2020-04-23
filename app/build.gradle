@@ -27,7 +27,7 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
-android{
+android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

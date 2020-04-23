@@ -94,4 +94,10 @@ public class MainLoginActivity extends AppCompatActivity {
         }//end if
     }
 
+    public void onClickConfigureHome(View view) {
+
+        Intent intent = new Intent(MainLoginActivity.this,MainConfigureHomeActivity.class);
+        startActivity(intent);
+    }
+
 }

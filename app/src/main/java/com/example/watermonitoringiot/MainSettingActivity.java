@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 public class MainSettingActivity extends AppCompatActivity {
 
-    EditText edUserId,edUserName,edFilterType,edAutoTds;
+    EditText edUserId,edUserName,edFilterType,edAutoTds,edTdsFetchInterval;
     Switch swAutoMode;
     SharedPreferences sharedPreferences;
 
@@ -36,6 +36,7 @@ public class MainSettingActivity extends AppCompatActivity {
         edFilterType = findViewById(R.id.edSettingFilterType);
         edAutoTds = findViewById(R.id.edSettingAutoTds);
         swAutoMode =findViewById(R.id.svSettingAutoMode);
+        edTdsFetchInterval = findViewById(R.id.edTdsFetchInterval);
 
 
         sharedPreferences = getSharedPreferences(Common.LOGIN_KEY, MODE_PRIVATE);
@@ -67,6 +68,7 @@ public class MainSettingActivity extends AppCompatActivity {
                             swAutoMode.setChecked(false);
                         }
                         edAutoTds.setText(jsonObject.getString("auto_mode_tds"));
+                        edTdsFetchInterval.setText(jsonObject.getString("tds_fetch_interval"));
                     }
 
                 } catch (Exception e) {
@@ -87,6 +89,7 @@ public class MainSettingActivity extends AppCompatActivity {
         String userId = edUserId.getText().toString();
         String filterType = edFilterType.getText().toString();
         String autoTds = edAutoTds.getText().toString();
+        String fetchInterval = edTdsFetchInterval.getText().toString();
         String autoMode="";
         if(swAutoMode.isChecked()) {
             autoMode="yes";
@@ -96,7 +99,7 @@ public class MainSettingActivity extends AppCompatActivity {
             autoMode="no";
         }
 
-        String url = Url.url+"?op=update_setting&user_id="+userId+"&auto_mode="+autoMode+"&filter_type="+filterType+"&auto_mode_tds="+autoTds;
+        String url = Url.url+"?op=update_setting&user_id="+userId+"&auto_mode="+autoMode+"&filter_type="+filterType+"&auto_mode_tds="+autoTds+"&tds_fetch_interval="+fetchInterval;
         StringRequest sr = new StringRequest(StringRequest.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

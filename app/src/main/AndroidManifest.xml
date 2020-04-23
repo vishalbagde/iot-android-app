@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/MyTheme">
-        <activity android:name=".MainSettingActivity"></activity>
+        <activity android:name=".MainConfigureHomeActivity"></activity>
+        <activity android:name=".MainSettingActivity" />
         <activity android:name=".MainOperationActivity" />
         <activity android:name=".MainModeSwitchActivity" />
         <activity android:name=".MainDashboardActivity">
